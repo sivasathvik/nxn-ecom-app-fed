@@ -25,20 +25,20 @@ const themeOptions: ThemeOptions = {
       primary: "#300000",
     },
   },
-//   components : {
-//     MuiAppBar : {
-//         styleOverrides :{
-//             colorPrimary : {
-//                 root: {
-//                     backgroundColor:"#203040",
+  components : {
+     MuiAppBar : {
+         styleOverrides :{
+             colorPrimary : {
+                root: {
+                  backgroundColor:"#203040",
 
-//                 },
+           },
 
-//             },
-//         },
-//     },
+        },
+     },
+  },
 
-//   },
+  },
 };
 
 const theme = createTheme(themeOptions);
