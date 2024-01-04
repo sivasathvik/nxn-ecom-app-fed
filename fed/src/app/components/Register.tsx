@@ -93,7 +93,7 @@ const Register = () => {
             <Typography>Already have an account?</Typography>
           </Grid>
           <Grid item xs={6}>
-            <Link href="#" underline="hover">
+            <Link href="/login" underline="hover">
               {"Login"}
             </Link>
           </Grid>
