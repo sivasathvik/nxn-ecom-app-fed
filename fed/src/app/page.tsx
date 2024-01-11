@@ -1,8 +1,11 @@
+'useclient'
 import Image from "next/image";
 import styles from "./page.module.css";
 import React from "react";
 import { AppBar, Box, Button, IconButton, Link, TextField, Toolbar, Typography } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import HomeComponent from "./components/Home";
+import ProjAppBar from "./components/ProjAppBar";
 
 // import Link from "next/link";
 // import { ThemeProvider, createTheme } from "@mui/material/styles";
@@ -11,7 +14,15 @@ import MenuIcon from "@mui/icons-material/Menu";
 export default function Home() {
   return (
     <React.Fragment>
-      <Box p={2}>
+      <ProjAppBar></ProjAppBar>
+      <Box>
+        <HomeComponent></HomeComponent>
+      </Box>
+    </React.Fragment>
+  );
+}
+
+/* <Box p={2}>
         <Button variant="contained" color="primary">
           Submit
         </Button>
@@ -33,7 +44,4 @@ export default function Home() {
             <Button color="inherit" sx={{ color: "#FFFFFF" }} >Login</Button>
           </Toolbar>
         </AppBar>
-      </Box>
-    </React.Fragment>
-  );
-}
+      </Box> */
